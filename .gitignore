@@ -1,0 +1,7 @@
+__pycache__/
+.venv/
+venv/
+.env
+.streamlit/secrets.toml
+*.pyc
+study_plan.json
