@@ -111,6 +111,28 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+st.markdown("""
+<style>
+div.stButton > button[kind="primary"] {
+    background-color: #2878F0 !important;
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+    font-weight: 700 !important;
+    border: none !important;
+    border-radius: 10px !important;
+    padding: 0.6rem 1.2rem !important;
+}
+
+div.stButton > button[kind="primary"] * {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+div.stButton > button[kind="primary"]:hover {
+    background-color: #1D5FCC !important;
+}
+</style>
+""", unsafe_allow_html=True)
 
 if BANNER_PATH.exists():
     st.image(str(BANNER_PATH), use_container_width=True)
